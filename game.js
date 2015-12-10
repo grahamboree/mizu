@@ -98,6 +98,7 @@ PS.init = function() {
 
 	PS.statusColor(color2);
 	PS.statusText("水");
+	PS.statusColor(0xffffff);
 
 	PS.gridSize(width, height);
 	PS.gridColor(color1);
