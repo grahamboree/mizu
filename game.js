@@ -72,11 +72,7 @@ function update() {
 	// Update water.
 	for (x = 1; x < width + 1; x += 1) {
 		for (y = 1; y < height + 1; y += 1) {
-			newValue = (
-				  source[x-1][y]
-				+ source[x+1][y]
-				+ source[x][y+1]
-				+ source[x][y-1]) / 2 - dest[x][y];
+			newValue = (source[x-1][y] + source[x+1][y] + source[x][y+1] + source[x][y-1]) / 2 - dest[x][y];
 			dest[x][y] = newValue * (1 - damping);
 		}
 	}
@@ -96,12 +92,11 @@ PS.init = function() {
 	PS.audioLoad("fx_drip1");
 	PS.audioLoad("fx_drip2");
 
-	PS.statusColor(color2);
-	PS.statusText("水");
-	PS.statusColor(0xffffff);
-
 	PS.gridSize(width, height);
 	PS.gridColor(color1);
+
+	PS.statusText("水");
+	PS.statusColor(color2);
 
 	PS.border(PS.ALL, PS.ALL, 0);
 
