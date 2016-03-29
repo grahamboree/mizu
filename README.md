@@ -1,4 +1,5 @@
 # 水
-[Perlenspiel](http://users.wpi.edu/~bmoriarty/ps/index.html) water simulation.
+2D water simulation in [Perlenspiel](http://users.wpi.edu/~bmoriarty/ps/index.html).
+[http://grahamboree.github.io/mizu/](http://grahamboree.github.io/mizu/)
 
-See it here: [http://grahamboree.github.io/mizu/](http://grahamboree.github.io/mizu/)
+![screenshot](/mizu.png?raw=true)
